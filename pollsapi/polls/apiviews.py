@@ -3,7 +3,7 @@ from rest_framework.response import Response
 from django.shortcuts import get_object_or_404
 
 
-from .midels import Poll, Choices
+from .models import Poll, Choices
 from .serializers import PollSerializer
 
 class PollList(APIView):

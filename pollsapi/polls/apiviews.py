@@ -8,7 +8,7 @@ class PollList(generics.ListCreateAPIView):
   queryset = Poll.objects.all()
   serializer_class = PollSerializer
       
-class PollDetail(APIView):
+class PollDetail(generics.ListCreateAPIView):
   queryset = Poll.objects.all()
   serializer_class = PollSerializer
       

@@ -23,7 +23,7 @@ class ChoiceList(generics.ListCreateAPIView):
   serializer_class = ChoiceSerializer
   
   
-class CreateVote(APIView):vot
+class CreateVote(APIView):
   serializer_class = VoteSerializer
   def post(self, request, pk, choice_pk):
     voted_by = request.data.get("voted_by")
